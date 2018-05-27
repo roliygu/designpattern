@@ -12,6 +12,7 @@ import com.roliy.designpattern.factory.impl.ProductEnum;
  */
 public class SimpleFactory {
 
+    // 对于简单工厂来说，produce函数可以是静态的
     public Product produce(ProductEnum type) {
         if (ProductEnum.ProductA.equals(type)) {
             // 可能需要一些其他参数来创建一个对象，额外的参数通过product的其他参数传入
